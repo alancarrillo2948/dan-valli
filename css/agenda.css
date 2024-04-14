@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.calendar-container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: burlywood;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color:green;
+}
+
+.available {
+    background-color: #5cb85c; /* Verde */
+    color: #fff;
+    cursor: pointer;
+}
+
+.booked {
+    background-color: #d9534f; /* Rojo */
+    color: #fff;
+}
+
+td:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!--<link rel="stylesheet" href="css/registros.css">  Enlace a un archivo CSS para los estilos -->
+    <link rel="stylesheet" href="css/registros.css">
+</head>
+<body>
+
+<div class="registro-container">
+    <nav>
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="#">Galeria </a>
+            <a href="acerca.html">acerca de</a>
+        </div>
+    </nav>
+    <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
+    <h2>Registrarse</h2>
+    <form action="procesar_registro.php" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="sesion.html">Iniciar Sesión</a></p>
+</div>
+
+</body>
+</html>
