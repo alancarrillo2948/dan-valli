@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-//include 'config.php';
+include 'config.php';
 ?>
 <html lang="es">
 <head>
@@ -14,12 +14,12 @@
 <body>
     <nav>
         <div class="container">
-            <a href="index.html"><img src="img/dan valli sin fondo.png" alt="Logo de InkMasters"></a>
+            <a href="index.php"><img src="img/dan valli sin fondo.png" alt="Logo de InkMasters"></a>
         </div>
     </nav>
     <H1>DAN VALLI</H1>
     <div class="nav">
-        <input type="checkbox">
+        <input type="checkbox" style="margin-right: 10px;">
           <span></span>
           <span></span>
           <div class="menu">

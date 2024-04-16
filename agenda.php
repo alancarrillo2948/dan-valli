@@ -12,7 +12,7 @@
 <div class="calendar-container">
     <nav>
         <div class="container">
-            <a href="index.html">Inicio</a>
+            <a href="index.php">Inicio</a>
         </div>
     </nav>
     <h2>Calendario de Citas</h2>

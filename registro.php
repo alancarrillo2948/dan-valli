@@ -12,9 +12,9 @@
 <div class="registro-container">
     <nav>
         <div class="container">
-            <a href="index.html">Inicio</a>
+            <a href="index.php">Inicio</a>
             <a href="#">Galeria </a>
-            <a href="acerca.html">acerca de</a>
+            <a href="acerca.php">acerca de</a>
         </div>
     </nav>
     <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
@@ -34,7 +34,7 @@
         </div>
         <button type="submit">Registrarse</button>
     </form>
-    <p>¿Ya tienes una cuenta? <a href="sesion.html">Iniciar Sesión</a></p>
+    <p>¿Ya tienes una cuenta? <a href="sesion.php">Iniciar Sesión</a></p>
 </div>
 
 </body>

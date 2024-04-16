@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+require_once 'config.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +13,9 @@
 
 <div class="login-container">
     <div class="container">
-        <a href="index.html">Inicio</a>
+        <a href="index.php">Inicio</a>
         <a href="#">Galeria </a>
-        <a href="acerca.html">acerca de</a>
+        <a href="acerca.php">acerca de</a>
     </div>
     <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
     <h2>Iniciar Sesión</h2>
@@ -27,7 +30,7 @@
         </div>
         <button type="submit">Iniciar Sesión</button>
         <br>
-        <p>¿No tienes una cuenta? <a href="registro.html">Registrarse</a></p>
+        <p>¿No tienes una cuenta? <a href="registro.php">Registrarse</a></p>
     </form>
 </div>
 

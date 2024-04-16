@@ -13,7 +13,7 @@
     <ul class="social-list">
         <li><a href="https://www.facebook.com/diego.a.navarro.50?locale=es_LA" target="_blank"><img src="img/Facebook sin fondo.png" alt="Facebook" class="logofacebook">Facebook</a></li>
         <br>
-        <li><a href="https://www.instagram.com/dan.valli/" target="_blank"><img src="img/instagram sin fondo.png" alt="Instagram" class="logoinstagram">Instagram</a></li>
+        <li><a href="https://www.instagram.com/dan.valli/" target="_blank"><img src="img/Instagram_icon.png" alt="Instagram" class="logoinstagram">Instagram</a></li>
         <!-- Agrega más redes sociales según sea necesario -->
     </ul>
 </div>

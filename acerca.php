@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div class="container">
-            <a href="index.html">Inicio</a>
+            <a href="index.php">Inicio</a>
         </div>
     </nav>
 <div class="container">
