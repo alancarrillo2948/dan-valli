@@ -1,17 +1,28 @@
-<!DOCTYPE<!DOCTYPE html>
+<?php
+require_once("config.php")
+?>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan valli - Donde tus Sueños se Hacen Arte</title>
     <link rel="stylesheet" href="css/acerca.css">
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <a href="index.php">Inicio</a>
+            <ul class="breadcrumb">
+              <li><a href="index.php">Inicio</a></li>
+              <li><a href="galeria.php">GALERIA</a></li>
+              <li><a class="active" href="#">acerca</a></li>
+              <li><a href="sesion.php">iniciar sesion</a></li>
+              <li><a href="agenda.php">AGENDA</a></li>
+            </ul>
         </div>
-    </nav>
+      </nav>
+      <script src="nav.js"></script>
 <div class="container">
     <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
     <h1>Bienvenido a Dan valli: Donde tus Sueños se Hacen Arte</h1>
@@ -22,7 +33,6 @@
 
     <h2>¿Por Qué Elegirnos?</h2>
     <ul class="feature-list">
-        <li><span class="highlight">Talentosos Artistas:</span> Nuestro equipo de artistas está formado por auténticos maestros del tatuaje, con años de experiencia y un ojo para el detalle que garantiza resultados impresionantes.</li>
         <li><span class="highlight">Higiene y Seguridad:</span> Tu seguridad y bienestar son nuestra máxima prioridad. Cumplimos con los más altos estándares de higiene y esterilización, utilizando equipos desechables y seguimos estrictos protocolos sanitarios.</li>
         <li><span class="highlight">Ambiente Acogedor:</span> En nuestro estudio, te recibirás en un ambiente acogedor y amigable. Queremos que te sientas cómodo y relajado mientras llevamos a cabo tu transformación artística.</li>
         <li><span class="highlight">Diversidad de Estilos:</span> Ya sea que estés buscando un diseño tradicional, geométrico, realista o abstracto, nuestros artistas dominan una amplia gama de estilos para satisfacer tus gustos y preferencias.</li>

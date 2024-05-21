@@ -1,3 +1,6 @@
+<?php
+require_once("config.php")
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,17 +9,23 @@
     <title>Registro</title>
     <!--<link rel="stylesheet" href="css/registros.css">  Enlace a un archivo CSS para los estilos -->
     <link rel="stylesheet" href="css/registros.css">
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
 
-<div class="registro-container">
     <nav>
         <div class="container">
-            <a href="index.php">Inicio</a>
-            <a href="#">Galeria </a>
-            <a href="acerca.php">acerca de</a>
+            <ul class="breadcrumb">
+              <li><a href="index.php">Inicio</a></li>
+              <li><a href="galeria.php">GALERIA</a></li>
+              <li><a href="acerca.php">acerca</a></li>
+              <li><a class="active" href="#">iniciar sesion</a></li>
+              <li><a href="agenda.php">AGENDA</a></li>
+              <li><a href="redes.php">redes</a></li>
+            </ul>
         </div>
-    </nav>
+      </nav>
+<div class="registro-container">
     <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
     <h2>Registrarse</h2>
     <form action="procesar_registro.php" method="POST">
@@ -31,6 +40,10 @@
         <div class="form-group">
             <label for="contrasena">Contraseña:</label>
             <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefono:</label>
+            <input type="phone" id="phone" name="phone" required>
         </div>
         <button type="submit">Registrarse</button>
     </form>

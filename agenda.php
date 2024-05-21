@@ -1,3 +1,6 @@
+<?php
+require_once("config.php")
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,113 +9,41 @@
     <title>Calendario de Citas</title>
     <link rel="stylesheet" href="css/agenda.css"> <!-- Enlace a un archivo CSS para los estilos -->
     <link rel="stylesheet" href="css/acerca.css">
+    <link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
-
-<div class="calendar-container">
     <nav>
         <div class="container">
-            <a href="index.php">Inicio</a>
+            <ul class="breadcrumb">
+              <li><a href="index.php">Inicio</a></li>
+              <li><a href="galeria.php">GALERIA</a></li>
+              <li><a href="acerca.php">acerca</a></li>
+              <li><a href="sesion.php">iniciar sesion</a></li>
+              <li><a class="active" href="#">AGENDA</a></li>
+              <li><a href="redes.php">redes</a></li>
+            </ul>
         </div>
     </nav>
-    <h2>Calendario de Citas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th></th> <!-- Celda vacía para la esquina superior izquierda -->
-                <th>Domingo</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sábado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>01:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>02:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>03:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>04:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>05:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>06:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>07:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-            <tr>
-                <td>08:00</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="available">Disponible</td>
-                <td class="booked">Ocupado</td>
-                <td class="booked">Ocupado</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
+      <img src="img/dan valli sin fondo.png" alt="Logo de la empresa" class="logo">
+    
+      <div class="container">
+        <h1>Agenda de Citas</h1>
+        <form action="agendar_cita.php" method="POST">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+          <label for="telefono">correo:</label>
+          <input type="email" id="correo" name="correo" required>
+          <button type="submit">Agendar</button>
+        </form>
+        <div class="citas">
+          <!-- Aquí se mostrarán las citas agendadas -->
+        </div>
+      </div>
 </body>
 </html>

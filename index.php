@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <?php
-include 'config.php';
+require_once("config.php")
 ?>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -19,12 +19,12 @@ include 'config.php';
     </nav>
     <H1>DAN VALLI</H1>
     <div class="nav">
-        <input type="checkbox" style="margin-right: 10px;">
+        <input type="checkbox">
           <span></span>
           <span></span>
           <div class="menu">
             <li><a href="acerca.php">acerca</a></li>
-            <li><a href="#">GALERIA</a></li>
+            <li><a href="galeria.php">GALERIA</a></li>
             <li><a href="agenda.php">AGENDA</a></li>
             <li><a href="sesion.php">INICIO SESION</a></li>
             <li><a href="redes.php">REDES SOCIALES</a></li>

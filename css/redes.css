@@ -25,13 +25,6 @@ h2 {
     text-align: center;
 }
 
-.social-list img {
-    display: block;
-    margin: 0 auto 50px; /* Centra el logo horizontalmente y añade espacio inferior */
-    width: 65px; /* Ajusta el ancho del logo según sea necesario */
-    background-color: transparent;
-}
-
 .social-list li {
     display: inline-block;
     margin-right: 10px;
@@ -72,4 +65,10 @@ h2 {
     margin: 0 auto 50px; /* Centra el logo horizontalmente y añade espacio inferior */
     width: 100px; /* Ajusta el ancho del logo según sea necesario */
     background-color: transparent;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centra el logo horizontalmente y añade espacio inferior */
+    width: 150px; /* Ajusta el ancho del logo según sea necesario */
 }

@@ -1,12 +1,15 @@
 <?php
-$host = "localhost";
-$db = "dan-valli";
-$user = "admin";
-$pass = "password";
+$servername = "localhost";
+$username = "admin";
+$password = "password";
+$dbname = "sistema_gestion_tatuajes";
 
-$conn = new mysqli($host, $user, $pass, $db);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 ?>
